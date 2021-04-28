@@ -1,30 +1,68 @@
-@import 'config';
+@import "config";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
-    background: $bg-color;
-    color: $text-color;
+body {
+  background: $bg-color;
+  color: $text-color;
+  margin: 0;
 }
 
 #wrapper {
+  display: flex;
+  height: 100vh;
+
+  #left {
+    flex: 1;
+    font-family: $font-normal;
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    #left {
-        flex: 1;
-        font-family: $font-normal;
-
-        #login-form {
-            
-        }
+    #login-form {
+      margin-top: 3rem;
     }
 
-    #right {
-        flex: 1;
-        font-family: $font-showcase;
+    #login-form > form {
+      display: flex;
+      flex-direction: column;
+
+      .text-input {
+        margin: 0.5rem 0;
+      }
     }
+
+    #extra-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 1.5rem 0;
+    }
+
+    #or {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 1.5rem;
+
+      .bar {
+        flex: .4;
+      }
+
+      span {
+        flex: 0;
+        margin: 0 .5rem;
+      }
+    }
+  }
+
+  #right {
+    flex: 1;
+    font-family: $font-showcase;
+  }
 }
-
