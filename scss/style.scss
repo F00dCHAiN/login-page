@@ -1,0 +1,30 @@
+@import 'config';
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: $bg-color;
+    color: $text-color;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+
+    #left {
+        flex: 1;
+        font-family: $font-normal;
+
+        #login-form {
+            
+        }
+    }
+
+    #right {
+        flex: 1;
+        font-family: $font-showcase;
+    }
+}
+
