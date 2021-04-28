@@ -6,3 +6,37 @@ $font-showcase: 'Krona One';
 
 $bg-color: #181818;
 $text-color: #fff;
+$primary-btn-color: #ea1b22;
+$primary-btn-hover-color: #e65d61;
+
+.primary-btn {
+    background-color: $primary-btn-color;
+    color: $text-color;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: all .5s linear;
+    cursor: pointer;
+
+    &:hover {
+        background: $primary-btn-hover-color;
+    }
+}
+
+.secondary-btn {
+    background: $bg-color;
+    color: $text-color;
+    border: 1px solid $text-color;
+    text-decoration: none;
+    font-size: .9rem;
+    color: $text-color;
+    padding: .5rem;
+    transition: all .5s linear;
+
+    &:hover {
+        border-color: $primary-btn-hover-color;
+        color: $primary-btn-hover-color;
+    }
+}
