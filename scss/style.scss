@@ -128,3 +128,41 @@ body {
     }
   }
 }
+
+
+@media only screen and (max-width: 768px) {
+  #wrapper {
+      #left {
+          flex: 1;
+
+          #login-form {
+            padding: .5rem;
+            width: 100%;
+          }
+      }
+      
+      #right {
+          flex: 1;
+      }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #wrapper {
+      #left {
+
+        .logo {
+          width: 15vh;
+        }
+
+          #login-form {
+              padding: .5rem;
+              width: 100%;
+          }
+      }
+      
+      #right {
+          display: none;
+      }
+  }
+}
