@@ -63,9 +63,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   height: 100vh;
   font-family: "Roboto";
   -webkit-box-pack: center;
@@ -81,7 +81,7 @@ body {
 }
 
 #wrapper #left #login-form {
-  font-size: .9rem;
+  font-size: 0.9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,7 +111,7 @@ body {
 }
 
 #wrapper #left #login-form > form label {
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 
 #wrapper #left #login-form > form .text-input {
@@ -121,7 +121,7 @@ body {
   border-radius: 2px;
   line-height: 1.3rem;
   color: #fff;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 #wrapper #left #extra-links {
@@ -143,9 +143,9 @@ body {
 
 #wrapper #left #extra-links a {
   text-decoration: none;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #fff;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 #wrapper #left #or {
@@ -161,6 +161,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 60%;
+  padding-bottom: 1.5rem;
 }
 
 #wrapper #left #or .bar {
@@ -192,9 +193,27 @@ body {
 }
 
 #wrapper #right {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
   font-family: "Krona One";
+  background: url("https://images.pexels.com/photos/3648850/pexels-photo-3648850.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat top right/cover;
+}
+
+#wrapper #right #showcase #showcase-content {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
