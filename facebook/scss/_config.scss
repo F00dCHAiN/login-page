@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+//colors
+$main-color: #1877f2;
+$bg: #f0f2f5;
+$bg-footer: #ffffff;
+$grey: #dadde1;
+$secondary-color: #42b72a;
+$normal-text-color: #1c1e21;
+$button-text-color: #ffffff;
+
+//fonts
+$banner-font: "Source Sans Pro";
+$normal-font: "Helvetica";
+
+//classes
+
+.text-input {
+  font-size: 17px;
+  padding: 14px 16px;
+  width: 330px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+}
+
+textarea:focus,
+.text-input:focus {
+  border: 1px solid $main-color;
+  outline: none;
+}
+
+.primary-btn {
+  width: 330px;
+  background: $main-color;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  color: $button-text-color;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  text-decoration: none;
+  width: 330px;
+  background: $secondary-color;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 15px 16px;
+  color: $button-text-color;
+  font-weight: bold;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: $main-color;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.separator {
+    border-bottom: 1px solid $grey;
+    margin-bottom: 16px;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.padding-class{
+  // * + * {
+  //   padding-left: 3rem;
+  // }
+
+
+}
